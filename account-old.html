@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/resize.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="burger__menu">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <rect width="13" height="1" fill="white" stroke="white" stroke-width="0.2" />
+                            <rect x="5" y="6" width="8" height="1" fill="white" stroke="white" stroke-width="0.2" />
+                            <rect y="12" width="13" height="1" fill="white" stroke="white" stroke-width="0.2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="13" height="13" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a id="about" class="menu__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Получить
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Погасить
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Акции
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__account">
+                    <div class="account__language">
+                        <select name="lang" class="lang">
+                            <option value="Ru">RU</option>
+                            <option value="En">EN</option>
+                        </select>
+                        <div class="select_arrow"></div>
+                    </div>
+                    <a href="#" class="account">
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="header__account-phone">
+                    <a href="#" class="account-phone">
+                        Личный кабинет
+                    </a>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="mainMenu">
+            <div class="container">
+                <div class="mainMenu__inner">
+                    <div class="mainMenu__inner-menu">
+                        <nav class="mainMenu__menu">
+                            <ul class="mainMenu__list">
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Акции
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Вопросы и ответы
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mainMenu__inner-info">
+                        <div class="info__title">
+                            Юридическая информация
+                        </div>
+                        <div class="info__inner">
+                            <ul class="info__item">
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Правовая информация
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Кредитный договор
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Подтверждение
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Паспорт кредита
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="info__item">
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Публичное предложение
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Согласие на обработку персональных данных
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="loan__link">
+        <a href="#">Личный кабинет</a>
+    </section>
+    <section class="persArea">
+        <div class="container">
+            <div class="persArea__tabs">
+                <div class="tabs__name">
+                    <div class="tabs__name-case">
+                        <div class="owner">
+                            <img src="images/Owner.png" alt="">
+                            <div class="tabs__name-person">Ивановский
+                                Сергей Васильевич</div>
+                            <div class="tabs__name-id">id 12345</div>
+                        </div>
+                    </div>
+                    <div class="tabs__name-items">
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text"> Личные данные</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text"> Доходы и платежи</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text">Адреса</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text"> Платежные карты</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text"> История транзакций</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text">Кредитная история</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text"> Документы</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text">Социальные сети</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text">Сменить пароль</div>
+                        </div>
+                        <div class="tabs__name-item">
+                            <div class="tabs__name-arrow">
+                                <img src="images/arrow-right.png" alt="">
+                            </div>
+                            <div class="tabs__name-text"> <a class="personal__account-exit" href="main.html">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content">
+                    <div class="tabs__content-items">
+                        <div class="tabs__content-item personal-date">
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Личные данные</h3>
+                                    <a href="#" class="head__edit">
+                                        <img src="images/edit.png" alt="изменить">
+                                    </a>
+                                </div>
+                                <div class="tabs__content-info">
+                                    <div class="info__description">
+                                        <div class="info__description-title">Дата рождения:</div>
+                                        <div class="info__description-date">11.01.1988</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Пол:</div>
+                                        <div class="info__description-date">Мужской</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Мобильный телефон:</div>
+                                        <div class="info__description-date">+38 (066) 111-22-33</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Семейное положение:</div>
+                                        <div class="info__description-date">Женат</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Образование:</div>
+                                        <div class="info__description-date">Высшее</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Количество детей:</div>
+                                        <div class="info__description-date">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Паспортные данные</h3>
+                                    <a href="#" class="head__edit">
+                                        <img src="images/edit.png" alt="изменить">
+                                    </a>
+                                </div>
+                                <div class="tabs__content-info">
+                                    <div class="info__description">
+                                        <div class="info__description-title">Серия, номер паспорта:</div>
+                                        <div class="info__description-date">НТ 112255</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Кем выдан:</div>
+                                        <div class="info__description-date">Голосеевским РУ ГУ МВД Украины в городе
+                                            Киеве</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Номер ИИН:</div>
+                                        <div class="info__description-date">46977851897</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Дата выдачи паспорта:</div>
+                                        <div class="info__description-date">12.05.2001</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Данные ID-карты</h3>
+                                    <a href="#" class="head__edit">
+                                        <img src="images/edit.png" alt="изменить">
+                                    </a>
+                                </div>
+                                <div class="tabs__content-info">
+                                    <div class="info__description">
+                                        <div class="info__description-title">Номер записи ID:</div>
+                                        <div class="info__description-date">19840216-00486</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Номер ID:</div>
+                                        <div class="info__description-date">46977851897</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Действителен до:</div>
+                                        <div class="info__description-date">12.05.2029</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Кем выдан:</div>
+                                        <div class="info__description-date">4564</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item income">
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Данные про доходы и платежи</h3>
+                                    <a href="#" class="head__edit">
+                                        <img src="images/edit.png" alt="изменить">
+                                    </a>
+                                </div>
+                                <div class="tabs__content-info">
+                                    <div class="info__description">
+                                        <div class="info__description-title">Получал кредит на протяжении последних 5
+                                            лет:</div>
+                                        <div class="info__description-date">Нет</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Ежемесячный платеж за текущими кредитами:
+                                        </div>
+                                        <div class="info__description-date">5000</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Сумма основного дохода:</div>
+                                        <div class="info__description-date">200 000</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Частота оплаты дохода:</div>
+                                        <div class="info__description-date">1 раз в месяц</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Дата следующей оплаты дохода:</div>
+                                        <div class="info__description-date">05.12.2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item adress">
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Адрес места проживания</h3>
+                                    <a href="#" class="head__edit">
+                                        <img src="images/edit.png" alt="изменить">
+                                    </a>
+                                </div>
+                                <div class="tabs__content-info">
+                                    <div class="info__description">
+                                        <div class="info__description-title">Страна:</div>
+                                        <div class="info__description-date">Украина</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Индекс:
+                                        </div>
+                                        <div class="info__description-date">02215</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Область:</div>
+                                        <div class="info__description-date">Киевская</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Район:</div>
+                                        <div class="info__description-date">Васильковский</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Тип населенного пункта:</div>
+                                        <div class="info__description-date">Город</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Населенный пункт:</div>
+                                        <div class="info__description-date">Васильков</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Тип улицы:</div>
+                                        <div class="info__description-date">Улица</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Улица:</div>
+                                        <div class="info__description-date">Данилевского</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Дом:</div>
+                                        <div class="info__description-date">35 Б</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Корпус:</div>
+                                        <div class="info__description-date">12</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Квартира:</div>
+                                        <div class="info__description-date">85</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Форма собственности:</div>
+                                        <div class="info__description-date">Собственник</div>
+                                    </div>
+                                    <div class="info__description">
+                                        <div class="info__description-title">Срок проживания:</div>
+                                        <div class="info__description-date">12 лет</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Адрес регистрации</h3>
+                                    <a href="#" class="head__edit">
+                                        <img src="images/edit.png" alt="изменить">
+                                    </a>
+                                </div>
+                                <div class="tabs__content-info">
+                                    <div class="info__description">
+                                        <div class="info__description-title">Совпадает с адресом проживания</div>
+                                        <div class="info__description-date"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item pay-cards">
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Платежные карты</h3>
+                                </div>
+                                <div class="pay-cards-table">
+                                    <div class="cards-table__head">
+                                        <div class="table__head-num">Номер карты</div>
+                                        <div class="table__head-status">Статус</div>
+                                    </div>
+                                    <div class="table__item">
+                                        <div class="table__item-num" data-title="Номер карты">52 **** 4455</div>
+                                        <div class="table__item-status" data-title="Статус">Активирована</div>
+                                        <div class="table__item-delete" data-title="Удалить">
+                                            <a href="#" class="delete-img">
+                                                <img src="images/delete.png" alt="удалить">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="table__item">
+                                        <div class="table__item-num" data-title="Номер карты">59 **** 4864</div>
+                                        <div class="table__item-status" data-title="Статус">Активирована</div>
+                                        <div class="table__item-delete" data-title="Удалить">
+                                            <a href="#" class="delete-img">
+                                                <img src="images/delete.png" alt="удалить">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="table__item">
+                                        <div class="table__item-num" data-title="Номер карты">59 **** 4864</div>
+                                        <div class="table__item-status unactive" data-title="Статус">Неактивна</div>
+                                        <div class="table__item-delete" data-title="Удалить">
+                                            <a href="#" class="delete-img">
+                                                <img src="images/delete.png" alt="удалить">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pay-cards-btn transparent-btn">
+                                    <a href="#">Добавить карту</a>
+                                </div>
+                                <div class="pay-cards-add">
+                                    <div class="tabs__content-head">
+                                        <h3 class="head__title">Платежные карты</h3>
+                                    </div>
+                                    <div class="pay-cards-ent">
+                                        <div class="pay-cards-num">
+                                            <label class="form__title" for="cards-num">Номер карты*</label>
+                                            <input type="text" name="cards-num">
+                                        </div>
+                                        <div class="pay-cards-date">
+                                            <label class="form__title" for="cards-date">Срок действия*</label>
+                                            <input type="text" name="cards-date" value="11.12.">
+                                        </div>
+                                        <div class="pay-cards-cvv">
+                                            <label class="form__title" for="cards-cvv">CVV*</label>
+                                            <input type="text" name="cards-cvv" placeholder="***">
+                                        </div>
+                                    </div>
+                                    <div class="personal__date-btns">
+                                        <a href="#" class="personal__date-btn btn">Сохранить</a>
+                                        <a href="#" class="personal__date-link">Отменить изменения</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item history-transiction">
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">История транзакций</h3>
+                                </div>
+                                <div class="table__transiction">
+                                    <div class="table__transiction-head">
+                                        <div class="transiction-head-title">Номер карты</div>
+                                        <div class="transiction-head-title">Номер</div>
+                                        <div class="transiction-head-title">Сумма</div>
+                                        <div class="transiction-head-title">Дата</div>
+                                        <div class="transiction-head-title">Тип</div>
+                                        <div class="transiction-head-title">Статус</div>
+                                    </div>
+                                    <div class="table__transiction-item">
+                                        <div class="transiction-item-text card-num" data-title="Номер карты">
+                                            <div class="card__num-date">59 ****
+                                                4894</div>
+                                        </div>
+                                        <div class="transiction-item-text" data-title="Номер">48658489816</div>
+                                        <div class="transiction-item-text" data-title="Сумма">12 000 грн</div>
+                                        <div class="transiction-item-text" data-title="Дата">05.12.2020</div>
+                                        <div class="transiction-item-text" data-title="Тип">Выдача кредита</div>
+                                        <div class="table__item-status" data-title="Статус">Успешно</div>
+                                    </div>
+                                    <div class="table__transiction-item unactive">
+                                        <div class="transiction-item-text card-num" data-title="Номер карты">
+                                            <div class="card__num-date">59 ****
+                                                4894</div>
+                                        </div>
+                                        <div class="transiction-item-text" data-title="Номер">48658489816</div>
+                                        <div class="transiction-item-text" data-title="Сумма">12 000 грн</div>
+                                        <div class="transiction-item-text" data-title="Дата">05.12.2020</div>
+                                        <div class="transiction-item-text" data-title="Тип">Выдача кредита</div>
+                                        <div class="table__item-status" data-title="Статус">Отклонено</div>
+                                    </div>
+                                    <div class="table__transiction-item">
+                                        <div class="transiction-item-text card-num" data-title="Номер карты">
+                                            <div class="card__num-date">59 ****
+                                                4894</div>
+                                        </div>
+                                        <div class="transiction-item-text" data-title="Номер">48658489816</div>
+                                        <div class="transiction-item-text" data-title="Сумма">12 000 грн</div>
+                                        <div class="transiction-item-text" data-title="Дата">05.12.2020</div>
+                                        <div class="transiction-item-text" data-title="Тип">Выдача кредита</div>
+                                        <div class="table__item-status" data-title="Статус">Успешно</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item credit-history">
+                            <div class="tabs__content-section">
+                                <div class="tabs__content-head">
+                                    <h3 class="head__title">Кредитная история</h3>
+                                </div>
+                                <div class="table__credits">
+                                    <div class="table__credits-head">
+                                        <div class="credits-head-title">Номер договора</div>
+                                        <div class="credits-head-title">Сумма</div>
+                                        <div class="credits-head-title">Дата</div>
+                                        <div class="credits-head-title">Статус</div>
+                                    </div>
+                                    <div class="table__credits-item">
+                                        <div class="table__credits-row">
+                                            <div class="credits-item-text credits-contract" data-title="Номер договора">
+                                                КК - 12357800</div>
+                                            <div class="credits-item-text credits-summ" data-title="Сумма">20 000 грн
+                                            </div>
+                                            <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
+                                            </div>
+                                            <div class="credits-item-text credits-status" data-title="Статус">Кредит
+                                                одобрен</div>
+                                        </div>
+                                        <div class="table__credits-info">
+                                            <div class="credits__info-item">
+                                                <div class="credits__info-head">
+                                                    <div class="head__info-title">Условия согласно договора</div>
+                                                    <div class="head__info-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Размер процентной ставки</div>
+                                                    <div class="info-row-date">2,00 %</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Срок кредитования</div>
+                                                    <div class="info-row-date">16 дней</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Дата погашения по кредиту</div>
+                                                    <div class="info-row-date">12.08.2020</div>
+                                                </div>
+
+                                            </div>
+                                            <div class="credits__info-item">
+                                                <div class="credits__info-head">
+                                                    <div class="head__info-title">Погашение клиентом на текущую дату
+                                                    </div>
+                                                    <div class="head__info-date"></div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Суммы кредита</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Суммы процентов</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Сумма штрафа</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                            </div>
+                                            <div class="credits__info-item">
+                                                <div class="credits__info-head">
+                                                    <div class="head__info-title">Плановая сумма до погашения</div>
+                                                    <div class="head__info-date"></div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Остаток суммы кредита</div>
+                                                    <div class="info-row-date">8 000 грн</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Суммы процентов</div>
+                                                    <div class="info-row-date">200 грн</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Сумма штрафа</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row debt-amount">
+                                                    <div class="info-row-text">Сумма задолжености до полного погашения
+                                                    </div>
+                                                    <div class="info-row-date">8 200 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="credits__info-btns">
+                                                <div class="credits__info-btn btn">Погасить кредит</div>
+                                                <div class="credits__info-btn transparent-btn">Пролонгировать</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__credits-item">
+                                        <div class="table__credits-row">
+                                            <div class="credits-item-text credits-contract" data-title="Номер договора">
+                                                КК - 12357800</div>
+                                            <div class="credits-item-text credits-summ" data-title="Сумма">20 000 грн
+                                            </div>
+                                            <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
+                                            </div>
+                                            <div class="credits-item-text credits-status" data-title="Статус">Кредит
+                                                одобрен</div>
+                                        </div>
+                                        <div class="table__credits-info">
+                                            <div class="credits__info-item">
+                                                <div class="credits__info-head">
+                                                    <div class="head__info-title">Условия согласно договора</div>
+                                                    <div class="head__info-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Размер процентной ставки</div>
+                                                    <div class="info-row-date">2,00 %</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Срок кредитования</div>
+                                                    <div class="info-row-date">16 дней</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Дата погашения по кредиту</div>
+                                                    <div class="info-row-date">12.08.2020</div>
+                                                </div>
+
+                                            </div>
+                                            <div class="credits__info-item">
+                                                <div class="credits__info-head">
+                                                    <div class="head__info-title">Погашение клиентом на текущую дату
+                                                    </div>
+                                                    <div class="head__info-date"></div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Суммы кредита</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Суммы процентов</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Сумма штрафа</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                            </div>
+                                            <div class="credits__info-item">
+                                                <div class="credits__info-head">
+                                                    <div class="head__info-title">Плановая сумма до погашения</div>
+                                                    <div class="head__info-date"></div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Остаток суммы кредита</div>
+                                                    <div class="info-row-date">8 000 грн</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Суммы процентов</div>
+                                                    <div class="info-row-date">200 грн</div>
+                                                </div>
+                                                <div class="credits__info-row">
+                                                    <div class="info-row-text">Сумма штрафа</div>
+                                                    <div class="info-row-date">0,00</div>
+                                                </div>
+                                                <div class="credits__info-row debt-amount">
+                                                    <div class="info-row-text">Сумма задолжености до полного погашения
+                                                    </div>
+                                                    <div class="info-row-date">8 200 грн</div>
+                                                </div>
+                                            </div>
+                                            <div class="credits__info-btns">
+                                                <div class="credits__info-btn btn">Погасить кредит</div>
+                                                <div class="credits__info-btn transparent-btn">Пролонгировать</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item documents">
+                            <div class="tabs__content-head">
+                                <h3 class="head__title">Документы</h3>
+                            </div>
+                            <div class="documents__table">
+                                <div class="documents__table-head">
+                                    <div class="documents__head-title">Номер договора</div>
+                                    <div class="documents__head-title">Сумма</div>
+                                    <div class="documents__head-title">Дата</div>
+                                    <div class="documents__head-title"></div>
+                                </div>
+                                <div class="documents__table-row">
+                                    <div class="documents__head-row" data-title="Номер договора">Кредитный договор <br>
+                                        № КК - 12357800</div>
+                                    <div class="documents__head-row" data-title="Сумма">20 000 грн</div>
+                                    <div class="documents__head-row" data-title="Дата">12.08.2020</div>
+                                    <div class="documents__head-row" data-title="Документы">
+                                        <div class="documents-link">
+                                            <a href="#" class="documents-download">Кредитный договор</a>
+                                        </div>
+                                        <div class="documents-link">
+                                            <a href="#" class="documents-download">Справка</a>
+                                        </div>
+                                        <div class="documents-link">
+                                            <a href="#" class="documents-download">Договор страхования</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents__table-row">
+                                    <div class="documents__head-row" data-title="Номер договора">Кредитный договор <br>
+                                        № КК - 12357800</div>
+                                    <div class="documents__head-row" data-title="Сумма">20 000 грн</div>
+                                    <div class="documents__head-row" data-title="Дата">12.08.2020</div>
+                                    <div class="documents__head-row" data-title="Документы">
+                                        <div class="documents-link">
+                                            <a href="#" class="documents-download">Кредитный договор</a>
+                                        </div>
+                                        <div class="documents-link">
+                                            <a href="#" class="documents-download">Справка</a>
+                                        </div>
+                                        <div class="documents-link">
+                                            <a href="#" class="documents-download">Договор страхования</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item personal-social">
+                            <div class="tabs__content-head">
+                                <h3 class="head__title">Социальные сети</h3>
+                            </div>
+                            <div class="personal__social-text">Указав ссылки на социальные сети, где вы
+                                зарегистрированы, увеличит ваши шансы в дальнейшем на принятие позитивного решения
+                                при оформлении заявки на кредит</div>
+                            <div class="personal__social-inp">
+                                <label for="social" class="social-inp-title">Ссылка 1</label>
+                                <div class="social__input-entry">
+                                    <input name="social" type="text">
+                                    <a href="#" class="social-delete">
+                                        <img src="images/delete.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="social-btn">
+                                    <a href="#" class="social__btn-add transparent-btn">Добавить ссылку</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item change-password">
+                            <div class="tabs__content-head">
+                                <h3 class="head__title">Сменить пароль</h3>
+                            </div>
+                            <div class="change__password-inner">
+                                <div class="change__password-old">
+                                    <label for="password" class="password-inp">Старый пароль*</label>
+                                    <input type="password" name="password">
+                                </div>
+                                <div class="change__password-new">
+                                    <div class="password-row">
+                                        <label for="password" class="password-inp">Новый пароль*</label>
+                                        <input type="password" name="password">
+                                    </div>
+                                    <div class="password-row">
+                                        <label for="password" class="password-inp">Повторите новый пароль*</label>
+                                        <input type="password" name="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="change__password-btns">
+                                <a href="#" class="change__password-btn btn">Сохранить</a>
+                                <a href="#" class="change__password-link">Отменить изменения</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-about">
+                    <div class="about__wrapper">
+                        <div class="about__company">
+                            <div class="company__title">О компании</div>
+                            <ul class="company__list">
+                                <li class="company__link">
+                                    <a href="#">
+                                        Правовая информация
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Кредитный договор
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Подтверждение
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Паспорт кредита
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Согласие на обработку персональных данных
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Публичное предложение
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="about__useful">
+                            <div class="useful__title">Полезные ссылки</div>
+                            <ul class="useful__list">
+                                <li class="useful__link">
+                                    <a href="#">
+                                        Акции
+                                    </a>
+                                </li>
+                                <li class="useful__link">
+                                    <a href="#">
+                                        Вопросы и ответы
+                                    </a>
+                                </li>
+                                <li class="useful__link">
+                                    <a href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__inner-support">
+                    <div class="support__title">Служба поддержки</div>
+                    <div class="support__info">
+                        <a class="suppport__phone" href="tel:+380447777777">+38 (044) 777-77-77</a>
+                        <div class="info__time">Время работы: с 9:00 до 18:00
+                            без перерыва и выходных</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="support__subscribe">
+                <div class="container support__container">
+                    <div class="suppurt__subscribe-inner">
+                        <div class="subscribe__title">Подписывайтесь на обновления</div>
+                        <div class="subscribe__text">Подпишись на наши обновления и новости, чтобы быть в курсе
+                            всех акций и предложений</div>
+                        <form class="subscribe__form">
+                            <input type="text" placeholder="Введите ваше имя">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button type="submit">Подписаться</button>
+                        </form>
+                        <div class="support__social">
+                            <p class="social__text">Мы в социальных сетях:</p>
+                            <a href="#" class="social__icon">
+                                <img src="images/instagram.svg" alt="">
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="images/facebook.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">© 2020 Monomoney. Все права защищены</div>
+        </div>
+    </footer>
+</body>
+
+</html>

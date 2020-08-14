@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/popup.js" defer></script>
+    <link rel="stylesheet" href="style/magnific-popup.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a class="popup-modal" href="#popup__sent">1</a>
+    <a class="popup-modal" href="#popup__mistake">2</a>
+    <a class="popup-modal" href="#popup__congr-1">3</a>
+    <a class="popup-modal" href="#popup__congr-2">4</a>
+    <a class="popup-modal" href="#popup__congr-3">5</a>
+    <a class="popup-modal" href="#popup__congr-4">6</a>
+    <a class="popup-modal" href="#popup__sorry">7</a>
+    <a class="popup-modal" href="#popup__login">8</a>
+    <div class="popups">
+        <div id="popup__sent" class="popup__sent popup">
+            <div class="popup__title">Ваша заявка отправлена</div>
+            <div class="sent__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только
+                заявка будет
+                рассмотрена!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+
+        <div id="popup__mistake" class="popup__mistake popup">
+            <div class="popup__title">Ваша заявка отправлена</div>
+            <div class="mistake__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только
+                заявка будет
+                рассмотрена!</div>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-1" class="popup__congr popup">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="congr__text popup__text">Теперь вы в клубе “Money case” и будете получать информацию об акциях и
+                промо первыми!</div>
+            <a href="#" class="popup-btn">На главную</a>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-2" class="popup__congr popup">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="congr__text popup__text">Ваш кредит одобрен!</div>
+            <div class="congr__timer">
+                <span>20 </span>:
+                <span>12 </span>:
+                <span>58</span>
+            </div>
+            <a href="#" class="popup-btn">Получить деньги</a>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+
+        <div id="popup__congr-3" class="popup__congr popup">
+            <div class="popup__title">Поздравляем!</div>
+            <div class="congr__text popup__text">Ваш кредит одобрен!</div>
+            <div class="congr__timer">
+                <span>20 </span>:
+                <span>12 </span>
+            </div>
+            <a href="#" class="popup-btn">Получить деньги</a>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+
+        <div id="popup__sorry" class="popup__sorry popup">
+            <div class="sorry__case">
+                <div class="case-img">
+                    <img class="case" src="images/case.png" alt="">
+                    <div class="case__top">
+                        <div class="popup__title case__title">Сожалеем!</div>
+                        <div class="sorry__text popup__text">Ваш кредит не был одобрен.</div>
+                    </div>
+                    <div class="case__bottom sorry-bottom">
+                        <div class="sorry__text popup__text">Вы можете подать повторную заявку
+                            через 30 дней</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup-btn sorry-btn">На главную</a>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+
+        <div id="popup__login" class="popup__login popup">
+            <div class="login__inner">
+                <div class="form__label popup__title">Войти в кабинет</div>
+                <form class="login__form">
+                    <div class="login__form-item">
+                        <label>Номер телефона*</label>
+                        <input type="phone">
+                    </div>
+                    <div class="login__form-item">
+                        <label>Пароль*</label>
+                        <input>
+                    </div>
+                    <a href="#" class="login__forgot">Забыли пароль?</a>
+                    <a href="#" class="popup-btn login-btn">Войти</a>
+                    <div class="login__register">
+                        <a href="#" class="login__regist">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+        <div id="popup__congr-4" class="popup__congr popup">
+            <div class="congr__case">
+                <div class="case-img">
+                    <img class="case" src="images/case.png" alt="">
+                    <div class="case__top congr__top">
+                        <div class="popup__title case__title">Поздравляем!</div>
+                        <div class="congr__text popup__text">Ваш кредит одобрен!</div>
+                    </div>
+                    <div class="case__bottom">
+                        <img src="images/money.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="popup-btn sorry-btn">Перейти в кабинет</a>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

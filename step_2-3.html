@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="burger__menu">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <rect width="13" height="1" fill="white" stroke="white" stroke-width="0.2" />
+                            <rect x="5" y="6" width="8" height="1" fill="white" stroke="white" stroke-width="0.2" />
+                            <rect y="12" width="13" height="1" fill="white" stroke="white" stroke-width="0.2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="13" height="13" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a id="about" class="menu__list-link" href="#">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Получить
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Погасить
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Акции
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__account">
+                    <div class="account__language">
+                        <select name="lang" class="lang">
+                            <option value="Ru">RU</option>
+                            <option value="En">EN</option>
+                        </select>
+                        <div class="select_arrow"></div>
+                    </div>
+                    <a href="#" class="account">
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="header__account-phone">
+                    <a href="#" class="account-phone">
+                        Личный кабинет
+                    </a>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 15V13.3333C14 12.4493 13.6839 11.6014 13.1213 10.9763C12.5587 10.3512 11.7956 10 11 10H5C4.20435 10 3.44129 10.3512 2.87868 10.9763C2.31607 11.6014 2 12.4493 2 13.3333V15"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="mainMenu">
+            <div class="container">
+                <div class="mainMenu__inner">
+                    <div class="mainMenu__inner-menu">
+                        <nav class="mainMenu__menu">
+                            <ul class="mainMenu__list">
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Акции
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Вопросы и ответы
+                                    </a>
+                                </li>
+                                <li class="mainMenu__list-item">
+                                    <a href="#" class="mainMenu__list-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mainMenu__inner-info">
+                        <div class="info__title">
+                            Юридическая информация
+                        </div>
+                        <div class="info__inner">
+                            <ul class="info__item">
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Правовая информация
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Кредитный договор
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Подтверждение
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Паспорт кредита
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="info__item">
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Публичное предложение
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Согласие на обработку персональных данных
+                                    </a>
+                                </li>
+                                <li class="info__item-text">
+                                    <a href="#">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="step">
+        <div class="container">
+            <div class="step__inner">
+                <div class="step__inner-num">
+                    Шаг <span>2</span> из 3
+                </div>
+                <div class="step__inner-title">
+                    Для оформления кредита - заполните форму
+                </div>
+                <div class="step__inner-svg">
+                    <div class="svg__path one active finish">
+                        <div class="svg__circle">
+                            <div class="svg__circle-min"></div>
+                        </div>
+                        <div class="svg__circle-line"></div>
+                        <span>1</span>
+                    </div>
+                    <div class="svg__path two active">
+                        <div class="svg__circle">
+                            <div class="svg__circle-min"></div>
+                        </div>
+                        <div class="svg__circle-line"></div>
+                        <span>2</span>
+                    </div>
+                    <div class="svg__path three">
+                        <div class="svg__circle">
+                            <div class="svg__circle-min"></div>
+                        </div>
+                        <span>3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reg">
+        <div class="container">
+            <div class="reg__step-items">
+                <div class="reg__step-item reg__step-code">
+                    <div class="reg__form">
+                        <div class="reg__form-left">
+                            <h3 class="reg__form-title">Адрес проживания</h3>
+                            <form action="#" class="reg__adress">
+                                <div class="select">
+                                    <label class="form__title" for="region">Область*</label>
+                                    <select name="region">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="region-option" value="1">Московская область</option>
+                                        <option class="region-option" value="2">Амурская область</option>
+                                        <option class="region-option" value="3">Архангельская область</option>
+                                        <option class="region-option" value="4">Астраханская область</option>
+                                        <option class="region-option" value="5">Белгородская область</option>
+                                        <option class="region-option" value="6">Брянская область</option>
+                                        <option class="region-option" value="7">Владимирская область</option>
+                                        <option class="region-option" value="8">Волгоградская область</option>
+                                        <option class="region-option" value="9">Вологодская область</option>
+                                        <option class="region-option" value="10">Воронежская область</option>
+                                        <option class="region-option" value="11">Ивановская область</option>
+                                        <option class="region-option" value="12">Иркутская область</option>
+                                        <option class="region-option" value="13">Калининградская область</option>
+                                        <option class="region-option" value="14">Калужская область</option>
+                                        <option class="region-option" value="15">Кемеровская область</option>
+                                        <option class="region-option" value="16">Кировская область</option>
+                                        <option class="region-option" value="17">Костромская область</option>
+                                        <option class="region-option" value="18">Курганская область</option>
+                                        <option class="region-option" value="19">Курская область</option>
+                                        <option class="region-option" value="20">Ленинградская область</option>
+                                        <option class="region-option" value="21">Липецкая область</option>
+                                        <option class="region-option" value="22">Магаданская область</option>
+                                        <option class="region-option" value="23">Мурманская область</option>
+                                        <option class="region-option" value="24">Нижегородская область</option>
+                                        <option class="region-option" value="25">Новгородская область</option>
+                                        <option class="region-option" value="26">Новосибирская область</option>
+                                        <option class="region-option" value="27">Омская область</option>
+                                        <option class="region-option" value="28">Оренбургская область</option>
+                                        <option class="region-option" value="29">Орловская область</option>
+                                        <option class="region-option" value="30">Пензенская область</option>
+                                        <option class="region-option" value="31">Псковская область</option>
+                                        <option class="region-option" value="32">Ростовская область</option>
+                                        <option class="region-option" value="33">Рязанская область</option>
+                                        <option class="region-option" value="34">Самарская область</option>
+                                        <option class="region-option" value="35">Саратовская область</option>
+                                        <option class="region-option" value="36">Сахалинская область</option>
+                                        <option class="region-option" value="37">Свердловская область</option>
+                                        <option class="region-option" value="38">Смоленская область</option>
+                                        <option class="region-option" value="39">Тамбовская область</option>
+                                        <option class="region-option" value="40">Тверская область</option>
+                                        <option class="region-option" value="41">Томская область</option>
+                                        <option class="region-option" value="42">Тульская область</option>
+                                        <option class="region-option" value="43">Тюменская область</option>
+                                        <option class="region-option" value="44">Ульяновская область</option>
+                                        <option class="region-option" value="45">Челябинская область</option>
+                                        <option class="region-option" value="46">Ярославская область</option>
+                                        <option class="region-option" value="47">Еврейская автономная область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <label class="form__title" for="district">Район*</label>
+                                    <select name="district">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="district-option" value="1">Московская область</option>
+                                        <option class="district-option" value="2">Амурская область</option>
+                                        <option class="district-option" value="3">Архангельская область</option>
+                                        <option class="district-option" value="4">Астраханская область</option>
+                                        <option class="district-option" value="5">Белгородская область</option>
+                                        <option class="district-option" value="6">Брянская область</option>
+                                        <option class="district-option" value="7">Владимирская область</option>
+                                        <option class="district-option" value="8">Волгоградская область</option>
+                                        <option class="district-option" value="9">Вологодская область</option>
+                                        <option class="district-option" value="10">Воронежская область</option>
+                                        <option class="district-option" value="11">Ивановская область</option>
+                                        <option class="district-option" value="12">Иркутская область</option>
+                                        <option class="district-option" value="13">Калининградская область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                                <div class="reg__adress-name">
+                                    <div class="select">
+                                        <label class="form__title" for="district">Тип*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>пгт</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                    <div class="select">
+                                        <label class="form__title" for="district">Название населенного пункта*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reg__adress-street">
+                                    <div class="select">
+                                        <label class="form__title" for="district">Тип улицы*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>ул</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                    <div class="street-name">
+                                        <label class="form__title" for="street">Улица*</label>
+                                        <input type="text" name="street">
+                                    </div>
+                                </div>
+                                <div class="reg__adress-home">
+                                    <div class="street-home">
+                                        <label class="form__title" for="home">Дом*</label>
+                                        <input type="text" name="home">
+                                    </div>
+                                    <div class="street-corps">
+                                        <label class="form__title" for="corps">Корпус*</label>
+                                        <input type="text" name="corps">
+                                    </div>
+                                    <div class="street-flat">
+                                        <label class="form__title" for="flat">Квартира*</label>
+                                        <input type="text" name="flat">
+                                    </div>
+                                </div>
+                                <div class="reg__adress-term">
+                                    <div class="select">
+                                        <label class="form__title" for="term">Срок проживания</label>
+                                        <select name="term">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                    <div class="term-index">
+                                        <label class="form__title" for="term">Индекс*</label>
+                                        <input type="text" name="term">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="reg__form-right">
+                            <h3 class="reg__form-title">Адрес регистрации</h3>
+                            <form action="#" class="reg__adress">
+                                <div class="select">
+                                    <label class="form__title" for="region">Область*</label>
+                                    <select name="region">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="region-option" value="1">Московская область</option>
+                                        <option class="region-option" value="2">Амурская область</option>
+                                        <option class="region-option" value="3">Архангельская область</option>
+                                        <option class="region-option" value="4">Астраханская область</option>
+                                        <option class="region-option" value="5">Белгородская область</option>
+                                        <option class="region-option" value="6">Брянская область</option>
+                                        <option class="region-option" value="7">Владимирская область</option>
+                                        <option class="region-option" value="8">Волгоградская область</option>
+                                        <option class="region-option" value="9">Вологодская область</option>
+                                        <option class="region-option" value="10">Воронежская область</option>
+                                        <option class="region-option" value="11">Ивановская область</option>
+                                        <option class="region-option" value="12">Иркутская область</option>
+                                        <option class="region-option" value="13">Калининградская область</option>
+                                        <option class="region-option" value="14">Калужская область</option>
+                                        <option class="region-option" value="15">Кемеровская область</option>
+                                        <option class="region-option" value="16">Кировская область</option>
+                                        <option class="region-option" value="17">Костромская область</option>
+                                        <option class="region-option" value="18">Курганская область</option>
+                                        <option class="region-option" value="19">Курская область</option>
+                                        <option class="region-option" value="20">Ленинградская область</option>
+                                        <option class="region-option" value="21">Липецкая область</option>
+                                        <option class="region-option" value="22">Магаданская область</option>
+                                        <option class="region-option" value="23">Мурманская область</option>
+                                        <option class="region-option" value="24">Нижегородская область</option>
+                                        <option class="region-option" value="25">Новгородская область</option>
+                                        <option class="region-option" value="26">Новосибирская область</option>
+                                        <option class="region-option" value="27">Омская область</option>
+                                        <option class="region-option" value="28">Оренбургская область</option>
+                                        <option class="region-option" value="29">Орловская область</option>
+                                        <option class="region-option" value="30">Пензенская область</option>
+                                        <option class="region-option" value="31">Псковская область</option>
+                                        <option class="region-option" value="32">Ростовская область</option>
+                                        <option class="region-option" value="33">Рязанская область</option>
+                                        <option class="region-option" value="34">Самарская область</option>
+                                        <option class="region-option" value="35">Саратовская область</option>
+                                        <option class="region-option" value="36">Сахалинская область</option>
+                                        <option class="region-option" value="37">Свердловская область</option>
+                                        <option class="region-option" value="38">Смоленская область</option>
+                                        <option class="region-option" value="39">Тамбовская область</option>
+                                        <option class="region-option" value="40">Тверская область</option>
+                                        <option class="region-option" value="41">Томская область</option>
+                                        <option class="region-option" value="42">Тульская область</option>
+                                        <option class="region-option" value="43">Тюменская область</option>
+                                        <option class="region-option" value="44">Ульяновская область</option>
+                                        <option class="region-option" value="45">Челябинская область</option>
+                                        <option class="region-option" value="46">Ярославская область</option>
+                                        <option class="region-option" value="47">Еврейская автономная область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <label class="form__title" for="district">Район*</label>
+                                    <select name="district">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="district-option" value="1">Московская область</option>
+                                        <option class="district-option" value="2">Амурская область</option>
+                                        <option class="district-option" value="3">Архангельская область</option>
+                                        <option class="district-option" value="4">Астраханская область</option>
+                                        <option class="district-option" value="5">Белгородская область</option>
+                                        <option class="district-option" value="6">Брянская область</option>
+                                        <option class="district-option" value="7">Владимирская область</option>
+                                        <option class="district-option" value="8">Волгоградская область</option>
+                                        <option class="district-option" value="9">Вологодская область</option>
+                                        <option class="district-option" value="10">Воронежская область</option>
+                                        <option class="district-option" value="11">Ивановская область</option>
+                                        <option class="district-option" value="12">Иркутская область</option>
+                                        <option class="district-option" value="13">Калининградская область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                                <div class="reg__adress-name">
+                                    <div class="select">
+                                        <label class="form__title" for="district">Тип*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>пгт</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                    <div class="select">
+                                        <label class="form__title" for="district">Название населенного пункта*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reg__adress-street">
+                                    <div class="select">
+                                        <label class="form__title" for="district">Тип улицы*</label>
+                                        <select name="district">
+                                            <option value="" hidden disabled selected>ул</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                    <div class="street-name">
+                                        <label class="form__title" for="street">Улица*</label>
+                                        <input type="text" name="street">
+                                    </div>
+                                </div>
+                                <div class="reg__adress-home">
+                                    <div class="street-home">
+                                        <label class="form__title" for="home">Дом*</label>
+                                        <input type="text" name="home">
+                                    </div>
+                                    <div class="street-corps">
+                                        <label class="form__title" for="corps">Корпус*</label>
+                                        <input type="text" name="corps">
+                                    </div>
+                                    <div class="street-flat">
+                                        <label class="form__title" for="flat">Квартира*</label>
+                                        <input type="text" name="flat">
+                                    </div>
+                                </div>
+                                <div class="reg__adress-term">
+                                    <div class="select">
+                                        <label class="form__title" for="term">Срок проживания</label>
+                                        <select name="term">
+                                            <option value="" hidden disabled selected>Выберите из списка</option>
+                                            <option class="district-option" value="1">Московская область</option>
+                                            <option class="district-option" value="2">Амурская область</option>
+                                            <option class="district-option" value="3">Архангельская область</option>
+                                            <option class="district-option" value="4">Астраханская область</option>
+                                            <option class="district-option" value="5">Белгородская область</option>
+                                            <option class="district-option" value="6">Брянская область</option>
+                                            <option class="district-option" value="7">Владимирская область</option>
+                                            <option class="district-option" value="8">Волгоградская область</option>
+                                            <option class="district-option" value="9">Вологодская область</option>
+                                            <option class="district-option" value="10">Воронежская область</option>
+                                            <option class="district-option" value="11">Ивановская область</option>
+                                            <option class="district-option" value="12">Иркутская область</option>
+                                            <option class="district-option" value="13">Калининградская область</option>
+                                        </select>
+                                        <div class="select_arrow">
+                                        </div>
+                                    </div>
+                                    <div class="term-index">
+                                        <label class="form__title" for="term">Индекс*</label>
+                                        <input type="text" name="term">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="form__adress-btn">
+                        <h3 class="reg__form-title">Адрес регистрации</h3>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                <div class="contol-group-text">Совпадает с адресом проживания</div>
+                                <input type="checkbox" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg__step-item reg__step-code">
+                    <h3 class="reg__form-title">Данные о месте работы</h3>
+                    <div class="reg__form">
+                        <div class="reg__form-left">
+                            <form class="reg__work" action="#">
+                                <div class="select">
+                                    <label class="form__title" for="employment">Занятость</label>
+                                    <select name="employment">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="employment-option" value="1">Московская область</option>
+                                        <option class="employment-option" value="2">Амурская область</option>
+                                        <option class="employment-option" value="3">Архангельская область</option>
+                                        <option class="employment-option" value="4">Астраханская область</option>
+                                        <option class="employment-option" value="5">Белгородская область</option>
+                                        <option class="employment-option" value="6">Брянская область</option>
+                                        <option class="employment-option" value="7">Владимирская область</option>
+                                        <option class="employment-option" value="8">Волгоградская область</option>
+                                        <option class="employment-option" value="9">Вологодская область</option>
+                                        <option class="employment-option" value="10">Воронежская область</option>
+                                        <option class="employment-option" value="11">Ивановская область</option>
+                                        <option class="employment-option" value="12">Иркутская область</option>
+                                        <option class="employment-option" value="13">Калининградская область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                                <div class="work-name">
+                                    <label class="form__title" for="term">Название предприятия*</label>
+                                    <input type="text" name="term">
+                                </div>
+                                <div class="select">
+                                    <label class="form__title" for="ndustry">Занятость</label>
+                                    <select name="ndustry">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="ndustry-option" value="1">Московская область</option>
+                                        <option class="ndustry-option" value="2">Амурская область</option>
+                                        <option class="ndustry-option" value="3">Архангельская область</option>
+                                        <option class="ndustry-option" value="4">Астраханская область</option>
+                                        <option class="ndustry-option" value="5">Белгородская область</option>
+                                        <option class="ndustry-option" value="6">Брянская область</option>
+                                        <option class="ndustry-option" value="7">Владимирская область</option>
+                                        <option class="ndustry-option" value="8">Волгоградская область</option>
+                                        <option class="ndustry-option" value="9">Вологодская область</option>
+                                        <option class="ndustry-option" value="10">Воронежская область</option>
+                                        <option class="ndustry-option" value="11">Ивановская область</option>
+                                        <option class="ndustry-option" value="12">Иркутская область</option>
+                                        <option class="ndustry-option" value="13">Калининградская область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="reg__form-right">
+                            <form class="reg__work" action="#">
+                                <div class="select">
+                                    <label class="form__title" for="employment">Категория должности*</label>
+                                    <select name="employment">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="employment-option" value="1">Московская область</option>
+                                        <option class="employment-option" value="2">Амурская область</option>
+                                        <option class="employment-option" value="3">Архангельская область</option>
+                                        <option class="employment-option" value="4">Астраханская область</option>
+                                        <option class="employment-option" value="5">Белгородская область</option>
+                                        <option class="employment-option" value="6">Брянская область</option>
+                                        <option class="employment-option" value="7">Владимирская область</option>
+                                        <option class="employment-option" value="8">Волгоградская область</option>
+                                        <option class="employment-option" value="9">Вологодская область</option>
+                                        <option class="employment-option" value="10">Воронежская область</option>
+                                        <option class="employment-option" value="11">Ивановская область</option>
+                                        <option class="employment-option" value="12">Иркутская область</option>
+                                        <option class="employment-option" value="13">Калининградская область</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <label class="form__title" for="ndustry">Специальность*</label>
+                                    <select name="ndustry">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="ndustry-option" value="1">Московская область</option>
+                                        <option class="ndustry-option" value="2">Амурская область</option>
+                                        <option class="ndustry-option" value="3">Архангельская область</option>
+                                        <option class="ndustry-option" value="4">Астраханская область</option>
+                                        <option class="ndustry-option" value="5">Белгородская область</option>
+                                        <option class="ndustry-option" value="6">Брянская область</option>
+                                        <option class="ndustry-option" value="7">Владимирская область</option>
+                                        <option class="ndustry-option" value="8">Волгоградская область</option>
+                                        <option class="ndustry-option" value="9">Вологодская область</option>
+                                        <option class="ndustry-option" value="10">Воронежская область</option>
+                                        <option class="ndustry-option" value="11">Ивановская область</option>
+                                        <option class="ndustry-option" value="12">Иркутская область</option>
+                                        <option class="ndustry-option" value="13">Калининградская область</option>
+                                    </select>
+                                    <div class="select_arrow"> </div>
+                                </div>
+                                <div class="select">
+                                    <label class="form__title" for="ndustry">Сумма основного дохода*</label>
+                                    <select name="ndustry">
+                                        <option value="" hidden disabled selected>Выберите из списка</option>
+                                        <option class="ndustry-option" value="1">Московская область</option>
+                                        <option class="ndustry-option" value="2">Амурская область</option>
+                                        <option class="ndustry-option" value="3">Архангельская область</option>
+                                        <option class="ndustry-option" value="4">Астраханская область</option>
+                                        <option class="ndustry-option" value="5">Белгородская область</option>
+                                        <option class="ndustry-option" value="6">Брянская область</option>
+                                        <option class="ndustry-option" value="7">Владимирская область</option>
+                                        <option class="ndustry-option" value="8">Волгоградская область</option>
+                                        <option class="ndustry-option" value="9">Вологодская область</option>
+                                        <option class="ndustry-option" value="10">Воронежская область</option>
+                                        <option class="ndustry-option" value="11">Ивановская область</option>
+                                        <option class="ndustry-option" value="12">Иркутская область</option>
+                                        <option class="ndustry-option" value="13">Калининградская область</option>
+                                    </select>
+                                    <div class="select_arrow"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="reg__form-confidant">
+                        <h3 class="reg__form-title">Данные доверенного контактного лица</h3>
+                        <div class="confidant__form-inner">
+                            <div class="confidant__form-left">
+                                <div class="confidant__surname">
+                                    <label class="form__title" for="surname">ФИО*</label>
+                                    <input type="name" name="surname">
+                                </div>
+                            </div>
+                            <div class="confidant__form-right">
+                                <div class="confidant__phone">
+                                    <label class="form__title" for="phone">Телефон*</label>
+                                    <input type="phone" name="phone">
+                                </div>
+                                <div class="select">
+                                    <label class="form__title" for="relationship">Степень отношений*</label>
+                                    <select name="relationship">
+                                        <option value="" hidden disabled selected>Выберите из списка </option>
+                                        <option class="relationship-option" value="1">Степень отношений</option>
+                                        <option class="relationship-option" value="2">Степень отношений</option>
+                                        <option class="relationship-option" value="3">Степень отношений</option>
+                                    </select>
+                                    <div class="select_arrow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reg__form-btns">
+                <a id="step__btn-next" class="reg__form-btn btn" href="#">Продолжить</a>
+                <a id="step__btn-prev" class="reg__form-back" href="#">Вернуться назад</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-about">
+                    <div class="about__wrapper">
+                        <div class="about__company">
+                            <div class="company__title">О компании</div>
+                            <ul class="company__list">
+                                <li class="company__link">
+                                    <a href="#">
+                                        Правовая информация
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Кредитный договор
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Подтверждение
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Паспорт кредита
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Согласие на обработку персональных данных
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Публичное предложение
+                                    </a>
+                                </li>
+                                <li class="company__link">
+                                    <a href="#">
+                                        Политика конфиденциальности
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="about__useful">
+                            <div class="useful__title">Полезные ссылки</div>
+                            <ul class="useful__list">
+                                <li class="useful__link">
+                                    <a href="#">
+                                        Акции
+                                    </a>
+                                </li>
+                                <li class="useful__link">
+                                    <a href="#">
+                                        Вопросы и ответы
+                                    </a>
+                                </li>
+                                <li class="useful__link">
+                                    <a href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__inner-support">
+                    <div class="support__title">Служба поддержки</div>
+                    <div class="support__info">
+                        <a class="suppport__phone" href="tel:+380447777777">+38 (044) 777-77-77</a>
+                        <div class="info__time">Время работы: с 9:00 до 18:00
+                            без перерыва и выходных</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="support__subscribe">
+                <div class="container support__container">
+                    <div class="suppurt__subscribe-inner">
+                        <div class="subscribe__title">Подписывайтесь на обновления</div>
+                        <div class="subscribe__text">Подпишись на наши обновления и новости, чтобы быть в курсе
+                            всех акций и предложений</div>
+                        <form class="subscribe__form">
+                            <input type="text" placeholder="Введите ваше имя">
+                            <input type="email" placeholder="Введите ваш Email">
+                            <button type="submit">Подписаться</button>
+                        </form>
+                        <div class="support__social">
+                            <p class="social__text">Мы в социальных сетях:</p>
+                            <a href="#" class="social__icon">
+                                <img src="images/instagram.svg" alt="">
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="images/facebook.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">© 2020 Monomoney. Все права защищены</div>
+        </div>
+    </footer>
+</body>
+
+</html>
