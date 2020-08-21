@@ -4218,3 +4218,105 @@ html .ui-button.ui-state-disabled:hover {
 .error__content-btn a {
     color: #333;
 }
+
+/* loan_credit */
+.reparing {
+    background: #E5E5E5;
+    padding: 25px 0 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.reparing-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.reparing__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reparing__wrapper-left,
+.reparing__wrapper-right {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.reparing__wrapper-right {
+    margin-left: 25px;
+}
+
+.reparing__wrapper-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.reparing__wrapper-body,
+.reparing__wrapper-percent,
+.reparing__wrapper-comission {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.reparing__wrapper-inp {
+    max-width: 250px;
+    width: 100%;
+}
+
+.reparing__wrapper-inp input {
+    border: 1px solid #E19A9D;
+    border-radius: 5px;
+    padding: 10px 15px;
+    outline: none;
+    margin: 11px 0 15px;
+    width: 80%;
+    margin-right: 5px;
+}
+
+.reparing__wrapper-form button {
+    padding: 10px 15px !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    text-align: center;
+    outline: none;
+    border: none;
+    max-width: 150px;
+    width: 100%;
+}
+
+.reparing__wrapper-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reparing__wrapper-form .control {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reparing__wrapper-btn {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.reparing__wrapper-btn .btn {
+    max-width: 100%;
+    width: 100%;
+}
