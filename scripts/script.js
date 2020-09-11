@@ -16,6 +16,7 @@ $('.info__slider').slick({
     arrows: false,
     swipe: true,
     dots: true,
+    adaptiveHeight: true
 });
 
 $('.burger__menu').on('click', function () {
