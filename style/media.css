@@ -298,6 +298,10 @@
             15px;
     }
 
+    .account__menu {
+        left: 15px;
+    }
+
     .logo img {
         max-width: 190px;
     }

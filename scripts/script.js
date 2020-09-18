@@ -125,3 +125,9 @@ $(function () {
 });
 
 
+$('.account-name').on('click', function () {
+    $('.account__menu').slideToggle()
+})
+$('.account__name-phone').on('click', function () {
+    $('.account__menu-phone').slideToggle()
+})

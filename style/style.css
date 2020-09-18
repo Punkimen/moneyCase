@@ -54,14 +54,74 @@ li {
     margin-bottom: 50px;
 }
 
-/* header-media */
-
-/* .header__account-phone {
+.header__account-personal.login .account {
     display: none;
-} */
+}
+
+.header__account-personal.login .account-phone {
+    display: none;
+}
+
+.header__account-personal.login .account__name-phone {
+    display: block;
+}
+
+.header__account-personal.login .account-name {
+    display: block;
+}
+
+.header__account-personal .account-name {
+    display: none;
+}
+
+.header__account-personal {
+    position: relative;
+}
 
 .header__account-phone {
     display: flex;
+}
+
+.account__menu {
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    left: 25px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    max-width: 120px;
+    width: 100%;
+    padding: 5px 10px;
+    display: none;
+}
+
+.account__menu-phone {
+    position: absolute;
+    z-index: 99;
+    top: 50px;
+    right: -25px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 120px;
+}
+
+.account__menu-phone a {
+    font-size: 12px;
+}
+
+.account__menu a {
+    font-size: 12px;
+}
+
+.account__menu li+li {
+    margin-top: 10px;
+}
+
+.account__menu-phone li+li {
+    margin-top: 10px;
 }
 
 .account-phone {
