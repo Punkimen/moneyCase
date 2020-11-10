@@ -16,6 +16,13 @@
     display: flex;
 }
 
+.account-verifications__wrapper {
+    display: flex;
+    max-width: 225px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .notVer {
     background: #F8D7DA;
     border: 1px solid #721C24;

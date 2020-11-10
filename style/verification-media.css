@@ -1,12 +1,29 @@
 @media (max-width: 1120px) {
     .account-verifications {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        top: auto;
+        left: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    .account-verifications {
+        margin-bottom: 15px;
+    }
+    .account-verifications__content {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
     .photo__nowork {
         display: block;
+    }
+    .sucsessVer .account-verifications__title {
+        display: inline-block;
+        padding-left: 40px;
+        margin-bottom: 15px;
+    }
+    .sucsessVer .account-verifications__title:before {
+        top: -8px;
     }
 }
 
@@ -56,16 +73,32 @@
     .verification-choose__content {
         padding: 15px 30px 0px;
     }
-    .bank__wrapper {
+    /* .bank__wrapper {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .bank__wrapper-item {
         width: auto;
+    } */
+    .bank__item-name {
+        padding-left: 20px;
     }
     .popup-verification {
         padding: 40px 20px;
+    }
+    .verification-content__title {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .verification-content__subtitle {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .verification-item__text {
+        max-width: 100%;
     }
 }
 
