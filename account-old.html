@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/slick.css">
     <link rel="stylesheet" href="style/jquery-ui.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/verification.css">
+    <link rel="stylesheet" href="style/verification-media.css">
     <link rel="stylesheet" href="style/media.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/slick.min.js" defer></script>
@@ -19,6 +19,7 @@
     <script src="scripts/jquery.ui.touch-punch.min.js"></script>
     <script src="scripts/resize.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/verification.js" defer></script>
 </head>
 
 <body>
@@ -194,8 +195,7 @@
                     <div class="tabs__name-case">
                         <div class="owner">
                             <img src="images/Owner.png" alt="">
-                            <div class="tabs__name-person">Ивановский
-                                Сергей Васильевич</div>
+                            <div class="tabs__name-person">Ивановский Сергей Васильевич</div>
                             <div class="tabs__name-id">id 12345</div>
                         </div>
                     </div>
@@ -263,6 +263,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="account-verifications notVer">
+                    <div class="account-verifications__img">
+                        <img src="images/attention.png" alt="">
+                    </div>
+                    <div class="account-verifications__content">
+                        <div class="account-verifications__text">Ваш аккаунт не верифицирован</div>
+                        <div class="account-verifications__link"><a href="">Пройти верификацию</a></div>
+                    </div>
+                    <div class="account-verifications__exit">
+                        <img src="images/ver-exit.png" alt="">
+                    </div>
+                </div>
+                <div class="account-verifications waitVer">
+                    <div class="account-verifications__img">
+                        <img src="images/ver-clock.png" alt="">
+                    </div>
+                    <div class="account-verifications__content">
+                        <div class="account-verifications__text">Ваш аккаунт проходит верификацию</div>
+                    </div>
+                    <div class="account-verifications__exit">
+                        <img src="images/ver-exit.png" alt="">
+                    </div>
+                </div>
+                <div class="account-verifications sucsessVer">
+                    <div class="account-verifications__content">
+                        <div class="account-verifications__title">Ваш аккаунт успешно верифицирован!</div>
+                        <div class="account-verifications__text">У вас есть возможность оформить новый кредит</div>
+                    </div>
+                    <div class="account-verifications__exit">
+                        <img src="images/ver-exit.png" alt="">
+                    </div>
+                </div>
                 <div class="tabs__content">
                     <div class="tabs__content-items">
                         <div class="tabs__content-item personal-date">
@@ -314,8 +346,8 @@
                                     </div>
                                     <div class="info__description">
                                         <div class="info__description-title">Кем выдан:</div>
-                                        <div class="info__description-date">Голосеевским РУ ГУ МВД Украины в городе
-                                            Киеве</div>
+                                        <div class="info__description-date">Голосеевским РУ ГУ МВД Украины в городе Киеве
+                                        </div>
                                     </div>
                                     <div class="info__description">
                                         <div class="info__description-title">Номер ИИН:</div>
@@ -364,8 +396,8 @@
                                 </div>
                                 <div class="tabs__content-info">
                                     <div class="info__description">
-                                        <div class="info__description-title">Получал кредит на протяжении последних 5
-                                            лет:</div>
+                                        <div class="info__description-title">Получал кредит на протяжении последних 5 лет:
+                                        </div>
                                         <div class="info__description-date">Нет</div>
                                     </div>
                                     <div class="info__description">
@@ -582,8 +614,8 @@
                                     </div>
                                     <div class="info__description">
                                         <div class="info__description-title">Кем выдан:</div>
-                                        <div class="info__description-date">Голосеевским РУ ГУ МВД Украины в городе
-                                            Киеве</div>
+                                        <div class="info__description-date">Голосеевским РУ ГУ МВД Украины в городе Киеве
+                                        </div>
                                     </div>
                                     <div class="info__description">
                                         <div class="info__description-title">Номер ИИН:</div>
@@ -642,8 +674,8 @@
                                             </div>
                                             <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
                                             </div>
-                                            <div class="credits-item-text credits-status" data-title="Статус">Кредит
-                                                одобрен</div>
+                                            <div class="credits-item-text credits-status" data-title="Статус">Кредит одобрен
+                                            </div>
                                         </div>
                                         <div class="table__credits-info">
                                             <div class="credits__info-item">
@@ -721,8 +753,8 @@
                                             </div>
                                             <div class="credits-item-text credits-date" data-title="Дата">12.08.2020
                                             </div>
-                                            <div class="credits-item-text credits-status" data-title="Статус">Кредит
-                                                одобрен</div>
+                                            <div class="credits-item-text credits-status" data-title="Статус">Кредит одобрен
+                                            </div>
                                         </div>
                                         <div class="table__credits-info">
                                             <div class="credits__info-item">
@@ -807,8 +839,7 @@
                                     <div class="documents__head-title"></div>
                                 </div>
                                 <div class="documents__table-row">
-                                    <div class="documents__head-row" data-title="Номер договора">Кредитный договор <br>
-                                        № КК - 12357800</div>
+                                    <div class="documents__head-row" data-title="Номер договора">Кредитный договор <br> № КК - 12357800</div>
                                     <div class="documents__head-row" data-title="Сумма">20 000 грн</div>
                                     <div class="documents__head-row" data-title="Дата">12.08.2020</div>
                                     <div class="documents__head-row" data-title="Документы">
@@ -824,8 +855,7 @@
                                     </div>
                                 </div>
                                 <div class="documents__table-row">
-                                    <div class="documents__head-row" data-title="Номер договора">Кредитный договор <br>
-                                        № КК - 12357800</div>
+                                    <div class="documents__head-row" data-title="Номер договора">Кредитный договор <br> № КК - 12357800</div>
                                     <div class="documents__head-row" data-title="Сумма">20 000 грн</div>
                                     <div class="documents__head-row" data-title="Дата">12.08.2020</div>
                                     <div class="documents__head-row" data-title="Документы">
@@ -846,9 +876,7 @@
                             <div class="tabs__content-head">
                                 <h3 class="head__title">Социальные сети</h3>
                             </div>
-                            <div class="personal__social-text">Указав ссылки на социальные сети, где вы
-                                зарегистрированы, увеличит ваши шансы в дальнейшем на принятие позитивного решения
-                                при оформлении заявки на кредит</div>
+                            <div class="personal__social-text">Указав ссылки на социальные сети, где вы зарегистрированы, увеличит ваши шансы в дальнейшем на принятие позитивного решения при оформлении заявки на кредит</div>
                             <div class="personal__social-inp">
                                 <label for="social" class="social-inp-title">Ссылка 1</label>
                                 <div class="social__input-entry">
@@ -964,8 +992,7 @@
                     <div class="support__title">Служба поддержки</div>
                     <div class="support__info">
                         <a class="suppport__phone" href="tel:+380447777777">+38 (044) 777-77-77</a>
-                        <div class="info__time">Время работы: с 9:00 до 18:00
-                            без перерыва и выходных</div>
+                        <div class="info__time">Время работы: с 9:00 до 18:00 без перерыва и выходных</div>
                     </div>
 
                 </div>
@@ -974,8 +1001,7 @@
                 <div class="container support__container">
                     <div class="suppurt__subscribe-inner">
                         <div class="subscribe__title">Подписывайтесь на обновления</div>
-                        <div class="subscribe__text">Подпишись на наши обновления и новости, чтобы быть в курсе
-                            всех акций и предложений</div>
+                        <div class="subscribe__text">Подпишись на наши обновления и новости, чтобы быть в курсе всех акций и предложений</div>
                         <form class="subscribe__form">
                             <input type="text" placeholder="Введите ваше имя">
                             <input type="email" placeholder="Введите ваш Email">

@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="style/magnific-popup.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/verification.css">
+    <link rel="stylesheet" href="style/verification-media.css">
     <title>Document</title>
+    <script src="scripts/timer.js" defer></script>
 </head>
 
 <body>
@@ -23,12 +26,13 @@
     <a class="popup-modal" href="#popup__congr-4">6</a>
     <a class="popup-modal" href="#popup__sorry">7</a>
     <a class="popup-modal" href="#popup__login">8</a>
+    <a class="popup-modal" href="#popup__verTimer">9</a>
+    <a class="popup-modal" href="#popup__verification">10</a>
     <div class="popups">
         <div id="popup__sent" class="popup__sent popup">
             <div class="popup__title">Ваша заявка отправлена</div>
-            <div class="sent__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только
-                заявка будет
-                рассмотрена!</div>
+            <div class="sent__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только заявка будет рассмотрена!
+            </div>
             <a href="#" class="popup__exit">
                 <img src="images/exit.svg" alt="">
             </a>
@@ -36,9 +40,8 @@
 
         <div id="popup__mistake" class="popup__mistake popup">
             <div class="popup__title">Ваша заявка отправлена</div>
-            <div class="mistake__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только
-                заявка будет
-                рассмотрена!</div>
+            <div class="mistake__text popup__text">Ваша заявка отправлена на проверку! Вы получите сообщение, как только заявка будет рассмотрена!
+            </div>
             <a href="#" class="popup__exit">
                 <img src="images/exit.svg" alt="">
             </a>
@@ -46,8 +49,7 @@
 
         <div id="popup__congr-1" class="popup__congr popup">
             <div class="popup__title">Поздравляем!</div>
-            <div class="congr__text popup__text">Теперь вы в клубе “Money case” и будете получать информацию об акциях и
-                промо первыми!</div>
+            <div class="congr__text popup__text">Теперь вы в клубе “Money case” и будете получать информацию об акциях и промо первыми!</div>
             <a href="#" class="popup-btn">На главную</a>
             <a href="#" class="popup__exit">
                 <img src="images/exit.svg" alt="">
@@ -90,8 +92,7 @@
                         <div class="sorry__text popup__text">Ваш кредит не был одобрен.</div>
                     </div>
                     <div class="case__bottom sorry-bottom">
-                        <div class="sorry__text popup__text">Вы можете подать повторную заявку
-                            через 30 дней</div>
+                        <div class="sorry__text popup__text">Вы можете подать повторную заявку через 30 дней</div>
                     </div>
                 </div>
             </div>
@@ -138,6 +139,28 @@
                 </div>
             </div>
             <a href="#" class="popup-btn sorry-btn">Перейти в кабинет</a>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+        <div id="popup__verTimer" class="popup-verification">
+            <div class="popup-verification__content">
+                <div class="popup-verification__title">Проходит идентификация личности</div>
+                <div class="popup-verification__text">Подождите, пожалуйста, процесс проверки займет не больше 5 минут</div>
+                <div class="popup-verification__timer">
+                    <img src="images/timer.png" alt="">
+                    <div class="timer"></div>
+                </div>
+            </div>
+            <a href="#" class="popup__exit">
+                <img src="images/exit.svg" alt="">
+            </a>
+        </div>
+        <div id="popup__verification" class="popup-verification">
+            <div class="popup-verification__content">
+                <div class="popup-verification__title">Ваш аккаунт проверяется</div>
+                <div class="popup-verification__text">Мы успешно получили данные, которые вы отправили для верификации своего аккаунта. Ваш аккаунт на этапе проверки. Как только ваш аккаунт будет верифицирован, вы получитеуведомление.</div>
+            </div>
             <a href="#" class="popup__exit">
                 <img src="images/exit.svg" alt="">
             </a>
