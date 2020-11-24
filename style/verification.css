@@ -302,17 +302,37 @@
 .photo__wrapper-img {
     margin: 0 auto 30px;
     display: block;
-    max-width: 320px;
-    width: 100%;
     position: relative;
+}
+
+#my_camera {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .photo__wrapper-img::before {
     content: url(../images/Ellipse.png);
     position: absolute;
+    display: block;
     left: 50%;
     top: 15px;
     transform: translateX(-50%);
+    z-index: 2;
+}
+
+#my_result {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+#my_result img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .photo__nowork {
